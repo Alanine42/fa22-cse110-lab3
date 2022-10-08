@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Meeting Minutes</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="media/panda.ico">
+</head>
+
+<body>
+  <main>
+    <h1>Graph Meets 4yr Plan First Brainstorm</h1>
+    <h3>brainstorming</h3>
+    <h3>Oct 4, 2022</h3>
+  </main>
+  <hr>
+
+  <header>
+    <nav>
+      <li><a href="https://youtu.be/dQw4w9WgXcQ">unfinished business from last meeting</a></li>
+      <li><a href="https://youtu.be/dQw4w9WgXcQ?t=93">potential new business</a></li>
+    </nav>
+  </header>
+
+  <div>
+    <h3>Attendees</h3>
+    <ul>
+      <li>Alan</li>
+      <li>Xavier</li>
+      <li>Alexander</li>
+      <li>QiuTian</li>
+      <li>
+        <details>
+          <summary> Guests from a parallel universe</summary>
+          <ul>
+            <li>Sheldon</li>
+            <li>Penny</li>
+            <li>Leonard</li>
+            <li>Howard</li>
+            <li>Raj</li>
+            <li>Simon</li>
+            <li>Amy</li>
+            <li>Melissa</li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Agenda</h2>
+    <ol>
+      <li>Brainstorming: Data structure to represent the graph of courses</li>
+      <li>Brainstorming: Any existing visualization library?</li>
+      <li>Brainstorming: How to represent the 4yr plan?</li>
+      <li>What's today's lunch?</li>
+    </ol>
+  </div>
+
+  <section>
+    <h2>Comments / Questions / Concerns</h2>
+
+    <p>Alan: I think we should use a <strong> adjacency matrix</strong> to represent the graph of courses. </p>
+
+    <p>Alexander: Most courses don't have too many prerequisite relationships.
+      I think we should use a <strong>adjacency <i>list</i></strong> to save space. </p>
+
+    <p>Xavier: There are too many courses in UCSD, but it's unlikely for a student need
+      to see <em>all</em> of them. </p>
+
+    <p>QiuTian: Whatever the data structure we use, let's put that in the <b>backend</b> and
+      frontend should only deal with the <b>API</b>. </p>
+
+    <p>Alan: I think we should use <a href="https://g6.antv.vision/en/docs/design/overview">G6</a>
+      to visualize the graph data structure.
+      <br>
+      But hey, I'm not sure if it's a good idea to use a library that's not from UCSD.
+
+    </p>
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <div>
+      <h2>Pictures</h2>
+      <img src="media/meeting_pic.jpeg" alt="meeting pic" height="310" width="550">
+      <img src="media/meeting_screenshot.png" alt="personal home" height="380" width="550">
+    </div>
+
+    <div>
+      <h3>Audio recording</h3>
+      <audio controls>
+        <source src="media/MakeAWish.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div>
+      <h3>Video recording</h3>
+      <video controls>
+        <source src="media/20220318030121750.mp4" type="video/mp4">
+        Your browser does not support video tag. Stop using IE.
+      </video>
+    </div>
+
+  </section>
+
+
+  <section>
+    <h2>Next Meeting</h2>
+    <span>Oct 11, 2022</span>
+
+    <h4>If you can't make it to our next meeting, submit this form: </h4>
+    <form>
+      <fieldset>
+        <legend><strong>Absent form: </strong></legend>
+
+        <label for="fullName">Full name: </label>
+        <input type="text" id="fullName" name="fullName"><br>
+
+        <label for="reason">Reason: </label><br>
+        <textarea id="reason" name="reason" rows="5" cols="70"></textarea><br>
+
+        <label for="notice">Things you want us to notice: </label><br>
+        <textarea id="notice" name="notice" rows="5" cols="70"></textarea><br>
+
+
+        <label for="departments">Choose your department:</label>
+        <select id="departments">
+          <option value="Backend">Backend</option>
+          <option value="Frontend">Frontend</option>
+          <option value="User Experience">User Experience</option>
+          <option value="Human Resource">Human Resources</option>
+        </select>
+
+        <br>
+
+        <label for="times">Is this your first time absent?</label>
+        <input list="times" name="times">
+        <datalist id="times">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </datalist>
+
+        <br>
+
+        <input type="submit" value="Submit">
+      </fieldset>
+
+
+
+    </form>
+  </section>
+
+
+
+  <footer>
+    <p>Meeting Minutes, 2022</p>
+  </footer>
+
+</body>
+
+</html>
