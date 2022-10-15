@@ -1,0 +1,48 @@
+h1 {
+    color:navy;
+}
+
+h2 {
+    background-color: antiquewhite;
+}
+
+#subtitle {
+    color:aquamarine;
+    opacity: 0.7;
+    background-color: cadetblue;
+    
+}
+
+a {
+    background-color:aliceblue;
+}
+
+/* un-clicked link */
+a:link {
+    color: hotpink;
+}
+
+/* clicked link */
+a:visited {
+    color: green;
+}
+
+a:hover {
+    background-color: #facef4;
+}
+
+.nav-box {
+    width: 2lh;
+    padding: 10px;
+    border: 2ex solid gray;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Style the button of additional guests */
+summary {
+    background-color: #115F1A;
+    color: white;
+    padding: 2mm 3mm;
+    display:block;
+}
