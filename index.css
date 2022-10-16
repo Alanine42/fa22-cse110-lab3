@@ -1,21 +1,28 @@
 h1 {
     color:navy;
+    position: sticky;
 }
 
 h2 {
+    display: block;
     background-color: antiquewhite;
+    padding: 10px, 10px, 5px, 5px;
+    margin:  10px, 10px, 50%, 50%;
 }
 
 #subtitle {
-    color:aquamarine;
+    /* color:aquamarine; */
     opacity: 0.7;
     background-color: cadetblue;
-    
+    margin: auto;
+    padding: auto;
+
 }
 
 a {
     background-color:aliceblue;
 }
+
 
 /* un-clicked link */
 a:link {
@@ -33,11 +40,22 @@ a:hover {
 
 .nav-box {
     width: 2lh;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: 2ex solid gray;
-    margin: 0;
+    margin: 1%;
     display: inline-block;
 }
+
+
+#big-things + section > div:hover {
+    border-width: 3px;
+    border-color: rgb(86, 63, 5);
+    border-style: dotted;
+}
+
 
 /* Style the button of additional guests */
 summary {
@@ -45,4 +63,98 @@ summary {
     color: white;
     padding: 2mm 3mm;
     display:block;
+}
+summary:active {
+    color: greenyellow;
+}
+
+ol[id="agenda"] {
+    outline-color: black;
+}
+
+/* selects all <li> elements inside a <ol> */
+ul li {
+    display: flex;
+    background-color: lightcyan;
+    border: 2px solid rebeccapurple;
+    padding: 1%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.container > li {
+    flex-grow: 4;
+    flex-shrink: 3;
+    align-content: center;
+}
+
+
+
+/* Grid */
+/* justify-content -> align items on the main axis
+   align-content -> align items on the cross axis
+ */
+.grid-container {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.grid-container > div {
+    background-color: rgb(255, 252, 186);
+    border: 1px solid black;
+    text-align: center;
+    align-self: stretch;
+    padding: 20px 20px 15px 15px;
+}
+
+/* Fonts */
+strong {
+    text-decoration: saddlebrown;
+    text-align: center;
+}
+
+
+/* Media */
+img {
+    display: inline-block;
+    position: relative;
+}
+#bigban {
+    border-radius: 30px;
+}
+img:hover, video:hover {
+    border-style: dotted;
+    border-color: burlywood;
+}
+img:active, video:active {
+    border-style: double;
+}
+
+audio {
+    min-height: 20px;
+    max-height: 50px;
+}
+
+* {
+    font: sans-serif;
+}
+
+/* adjacent sibling */
+#next-meeting + span {
+    color:#115F1A
+}
+
+/* general sibling */
+legend ~ input, legend ~ textarea{
+    color: #a2008c;
+}
+legend ~ input:hover, legend ~ textarea:hover{
+    border-style: dashed;
+    border-color: #004508;
 }
