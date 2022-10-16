@@ -98,6 +98,11 @@ ul li {
 /* justify-content -> align items on the main axis
    align-content -> align items on the cross axis
  */
+@media (max-width: 1000px) {
+    .grid-container > div {
+        flex-direction: column;
+    }
+}
 .grid-container {
     display: grid;
     align-content: space-evenly;
@@ -112,6 +117,8 @@ ul li {
     align-self: stretch;
     padding: 20px 20px 15px 15px;
 }
+
+
 
 /* Fonts */
 strong {
@@ -143,6 +150,19 @@ audio {
 
 * {
     font: sans-serif;
+}
+
+@font-face {
+    font-family: xieFont;
+    src: url(/ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf);
+}
+#my-name {
+    font-family: xieFont;
+    font-size: xx-large;
+}
+#my-name:hover {
+    border-style: dotted;
+    border-color: orange;
 }
 
 /* adjacent sibling */
